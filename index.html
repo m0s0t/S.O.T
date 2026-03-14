@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام الاختبارات الذكي | الرئيسية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home-style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen pb-12">
+
+    <header class="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white pt-12 pb-20 px-6 rounded-b-[4rem] shadow-2xl relative">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-black mb-3 tracking-tight">نظام الاختبارات الذكي المطور  🎓</h1>
+                <p class="text-blue-200 text-lg opacity-90">مرحباً بك.. اختر المادة وابدأ الاختبار الآن</p>
+            </div>
+            <button id="home-btn" onclick="renderSubjects()" class="hidden bg-white/10 backdrop-blur-md border border-white/20 px-6 py-3 rounded-2xl font-bold hover:bg-white hover:text-blue-900 transition-all">
+                🏠 العودة للمواد
+            </button>
+        </div>
+
+        <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 w-full max-w-2xl px-6">
+            <div class="relative group">
+                <input type="text" oninput="handleSearch(this.value)" 
+                       placeholder="ابحث عن محاضرة أو موضوع طبي..." 
+                       class="w-full p-5 pr-14 rounded-2xl shadow-2xl text-slate-800 outline-none focus:ring-4 focus:ring-blue-400/50 transition-all text-lg">
+                <span class="absolute right-5 top-1/2 -translate-y-1/2 text-2xl opacity-40 group-focus-within:opacity-100 transition-opacity">🔍</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-6 mt-12">
+        
+        <section id="recent-activity" class="mb-12">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="text-2xl">⚡</span>
+                <h2 class="text-xl font-black text-slate-700">آخر الاختبارات التي خضتها</h2>
+            </div>
+            <div id="recent-list" class="flex gap-4 overflow-x-auto pb-4 no-scrollbar">
+                <p class="text-slate-400 italic">لا توجد اختبارات مكتملة مؤخراً.</p>
+            </div>
+        </section>
+
+        <hr class="border-slate-200 mb-10">
+
+        <div id="main-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+    </main>
+
+    <script src="home-main.js"></script>
+
+
+    <footer class="mt-20 border-t border-slate-200 bg-white/50 backdrop-blur-md py-10">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-right">
+                <h2 class="text-2xl font-black text-blue-900 mb-2">نظام الاختبارات الذكي المطور  🎓</h2>
+                <p class="text-slate-500 text-sm font-bold">منصة امتحانية متطورة تم تصميمها لتحاكي تجربة اختبار الببل شيت مع ميزات تفاعلية  .</p>
+            </div>
+
+            <div class="flex gap-6 text-slate-400 font-bold text-sm">
+                <a href="#" class="hover:text-blue-900 transition-colors">عن المنصة</a>
+                <a href="#" class="hover:text-blue-900 transition-colors">سياسة الخصوصية</a>
+                <a href="#" class="hover:text-blue-900 transition-colors">الدعم الفني</a>
+            </div>
+
+            <div class="text-center md:text-left">
+                <p class="text-slate-600 font-black text-sm">جميع الحقوق محفوظة © 2026</p>
+                <p class="text-blue-500 text-xs mt-1 font-bold">تم التطوير من قبل مصطفى ابراهيم حسن بكل ❤️  لطلاب قسم التخدير في الجامعة التقنية الوسطى</p>
+            </div>
+        </div>
+        
+        <div class="mt-8 pt-6 border-t border-slate-100 text-center">
+            <div class="flex justify-center gap-4 text-2xl grayscale hover:grayscale-0 transition-all duration-500 opacity-50 cursor-pointer">
+                <span>📚</span> <span>🔬</span> <span>🏥</span> <span>🩺</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
