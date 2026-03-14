@@ -1,0 +1,144 @@
+:root {
+    --primary: #1e3a8a;
+    --accent: #3b82f6;
+    --success: #10b981;
+    --bg-body: #f1f5f9;
+}
+
+body {
+    background: radial-gradient(circle at top right, #e2e8f0 0%, #f1f5f9 100%);
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* تحسين شريط البحث ليصبح "عائماً" */
+.search-wrapper {
+    position: relative;
+    max-width: 700px;
+    margin: -40px auto 40px;
+    padding: 0 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+    border-radius: 2rem;
+    border: 2px solid transparent;
+    background: white;
+    box-shadow: 0 15px 35px rgba(30, 58, 138, 0.1);
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+}
+
+.search-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 5px rgba(59, 130, 246, 0.15);
+    transform: translateY(-2px);
+}
+
+/* بطاقات المواد - شكل زجاجي احترافي */
+.subject-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.subject-card:hover {
+    background: white;
+    transform: scale(1.03) translateY(-10px);
+    box-shadow: 0 25px 50px -12px rgba(30, 58, 138, 0.15);
+}
+
+/* زر الرجوع الأنيق */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: white;
+    color: var(--primary);
+    border-radius: 1rem;
+    font-weight: 900;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.back-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateX(5px);
+}
+
+/* أنيميشن لظهور العناصر */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-card {
+    animation: fadeInUp 0.5s ease forwards;
+}
+/* إخفاء شريط التمرير */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.animate-fade {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* تأثيرات الموبايل */
+@media (max-width: 640px) {
+    header { padding-bottom: 5rem; border-radius: 0 0 2rem 2rem; }
+    .search-input { font-size: 1rem; padding: 1rem 3rem 1rem 1rem; }
+}
+footer {
+    /* تجعل الفوتر يلتصق بأسفل الصفحة حتى لو كان المحتوى قليلاً */
+    position: relative;
+    width: 100%;
+}
+
+footer a {
+    position: relative;
+    text-decoration: none;
+}
+
+/* خط متحرك تحت الروابط عند تمرير الفأرة */
+footer a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    right: 0;
+    background-color: #1e3a8a;
+    transition: width 0.3s ease;
+}
+
+footer a:hover::after {
+    width: 100%;
+}
+@media (max-width: 640px) {
+    /* تصغير حجم الخط والمسافات قليلاً في الهواتف */
+    header h1 { font-size: 1.8rem !important; }
+    header p { font-size: 0.9rem !important; }
+    
+    .search-input {
+        padding: 1rem 3rem 1rem 1rem !important;
+        font-size: 0.95rem !important;
+    }
+    
+    .subject-card {
+        padding: 1.5rem !important;
+    }
+}

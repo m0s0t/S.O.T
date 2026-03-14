@@ -1,0 +1,12 @@
+        :root { --primary-blue: #1a237e; --gold: #fbc02d; --soft-bg: #f0f2f5; }
+        body { font-family: 'Tajawal', sans-serif; background-color: var(--soft-bg); transition: all 0.3s; }
+        .en { font-family: 'Nunito', sans-serif; direction: ltr; text-align: left; }
+        .btn-3d { transition: all 0.1s; border-bottom-width: 4px; }
+        .btn-3d:active { transform: translateY(4px); border-bottom-width: 0; }
+        .option-card { border: 2px solid #e5e7eb; border-bottom-width: 5px; cursor: pointer; transition: all 0.2s; }
+        
+        /* ألوان المراجعة */
+        .correct-opt { background-color: #dcfce7 !important; border-color: #22c55e !important; color: #166534 !important; }
+        .wrong-opt { background-color: #fee2e2 !important; border-color: #ef4444 !important; color: #991b1b !important; }
+        .selected { background-color: #e8f0fe; border-color: var(--primary-blue); color: var(--primary-blue); }
+    
