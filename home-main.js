@@ -10,6 +10,7 @@ const academyData = [
             { id: "i5", title: "Feeding tubes", models: ["Q/icu5.html"] }
         ] 
     },
+        
     { 
         id: "medicine", name: "باطني", icon: "🩺", color: "#2563eb", 
         lectures: [
@@ -22,8 +23,18 @@ const academyData = [
     },
 
     { 
-        id: "anesthesia", name: "تخدير", icon: "💤", color: "#7c3aed", 
+         id: "anesthesia", name: "تخدير", icon: "💤", color: "#7c3aed", 
+        
         lectures: [
+            { id: "i4.1", title: "Geriatric", models: ["Anesthesia/ans4.html"] },
+            { id: "i7-9", title: "Urology and Ophthalmic ", models: ["Anesthesia/ans7-9.html"] },
+            { id: "i8", title: "orthopedics", models: ["Anesthesia/ans8.html"] },
+            { id: "i10", title: "neurosurgery", models: ["Anesthesia/ans10.html"] },
+            // الجزء الثاني لكل محاضرة
+            { id: "i4.2", title: "Geriatric 2", models: ["Anesthesia/ans4 - Copy.html"] },
+            { id: "i7-9.2", title: "Urology and Ophthalmic 2", models: ["Anesthesia/ans7-9 - Copy.html"] },
+            { id: "i8.2", title: "orthopedics 2", models: ["Anesthesia/ans8.2 - Copy.html"] },
+            { id: "i10.2", title: "Neurosurgery 2", models: ["Anesthesia/ans10 - Copy.html"] }
         ] 
     },
     { 
