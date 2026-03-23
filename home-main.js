@@ -33,7 +33,7 @@ const academyData = [
             // الجزء الثاني لكل محاضرة
             { id: "i4.2", title: "Geriatric 2", models: ["Anesthesia/ans4 - Copy.html"] },
             { id: "i7-9.2", title: "Urology and Ophthalmic 2", models: ["Anesthesia/ans7-9 - Copy.html"] },
-            { id: "i8.2", title: "orthopedics 2", models: ["Anesthesia/ans8.2 - Copy.html"] },
+            { id: "i8.2", title: "orthopedics 2", models: ["Anesthesia/ans8 - Copy.html"] },
             { id: "i10.2", title: "Neurosurgery 2", models: ["Anesthesia/ans10 - Copy.html"] }
         ] 
     },
